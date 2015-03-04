@@ -1,0 +1,33 @@
+{
+	"name": "pms_deployer",
+	"version": "1.0.0",
+	"description": "deploys parsed page rows into mongodb database",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rcmonitor/pms_database_deployer.git"
+	},
+	"keywords": [
+		"pms",
+		"parser"
+	],
+	"author": "rcmonitor",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rcmonitor/pms_database_deployer/issues"
+	},
+	"homepage": "https://github.com/rcmonitor/pms_database_deployer",
+	"dependencies": {
+		"dependencies": {
+			"mongodb": "~2.0.0",
+			"amqp": "~0.2.0"
+		},
+		"devDependencies": {
+			"chai": "~1.10.0",
+			"mocha": "~2.1.0"
+		}
+	}
+}
