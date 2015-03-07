@@ -27,7 +27,8 @@ var oDeployer = new cEventEmitter();
 //var oDate = new Date();
 
 oDeployer.validEvents = {
-	"deployed": "deployed"
+	"deployed": "deployed",
+	"message": "message"
 };
 
 var timeStarted = new Date().getTime();
@@ -56,6 +57,8 @@ oDeployer.wait = function(oRabbitProperties){
 					amqpQueue.subscribe(function(msg){
 						intMsgCount ++;
 						hpg.log(msg.data.toString('utf-8'), 'message #' + intMsgCount);
+
+						oDeployer.emit(oDeployer.validEvents.message, msg.data);
 					});
 				});
 

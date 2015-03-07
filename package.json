@@ -23,7 +23,7 @@
 	"dependencies": {
 		"mongodb": "~2.0.0",
 		"amqp": "~0.2.0",
-		"helpers-global": "~1.1.0"
+		"helpers-global": "~1.2.0"
 	},
 	"devDependencies": {
 		"chai": "~1.10.0",
